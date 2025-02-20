@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const URL = `http://api.weatherapi.com/v1`;
 
 const Api = () => {
-  const [temp, setTemp] = useState("");
+//   const [temp, setTemp] = useState("");
 
   useEffect(() => {
     const fatchData = async () => {
