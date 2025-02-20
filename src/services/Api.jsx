@@ -1,6 +1,6 @@
 import React from 'react'
 
-const URL = `https://www.weatherapi.com/docs/#`
+const URL = `http://api.weatherapi.com/v1`
 
 const Api = () => {
   return (
