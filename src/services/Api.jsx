@@ -8,7 +8,7 @@ const Api = () => {
   useEffect(() => {
     const fatchData = async () => {
       const result = await fetch(URL);
-      console.log(result);
+      console.log(result.json());
     };
     fatchData();
   }, []);
