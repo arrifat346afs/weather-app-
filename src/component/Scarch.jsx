@@ -3,7 +3,7 @@ import React from 'react'
 const Scarch = () => {
   return (
     <div>
-      THis id you copilet
+     <input type="text" />
     </div>
   )
 }
