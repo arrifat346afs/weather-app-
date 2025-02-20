@@ -1,6 +1,6 @@
 import React from 'react'
 
-const api = () => {
+const Api = () => {
   return (
     <div>
       <h1>hi</h1>
