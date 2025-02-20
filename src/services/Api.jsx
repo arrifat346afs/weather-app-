@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const URL = `http://api.weatherapi.com/v1/current.json?key=911c12b46fee4dba8c5133138252002`;
+const URL = `http://api.weatherapi.com/v1/current.json?key=911c12b46fee4dba8c5133138252002&q=Dhaka`;
 
 const Api = () => {
 //   const [temp, setTemp] = useState("");
