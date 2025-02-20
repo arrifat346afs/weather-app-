@@ -1,7 +1,7 @@
 
 
 import './App.css'
-import Api from './services/api'
+
 
 const API_KEY = "911c12b46fee4dba8c5133138252002";
 
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <>
-     <Api/>
+     
     </>
   )
 }
