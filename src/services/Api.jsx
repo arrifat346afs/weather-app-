@@ -9,7 +9,7 @@ const Api = () => {
     const fatchData = async () => {
       const result = await fetch(URL);
       result.json().then((json) => {
-        setTemp(json.current.temp_f)
+        setTemp(json.current.gust_kph)
       });
     };
     fatchData();
