@@ -1,6 +1,6 @@
 import React from 'react'
 
-const URL = 
+const URL = ``
 
 const Api = () => {
   return (
