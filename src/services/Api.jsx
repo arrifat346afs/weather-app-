@@ -8,4 +8,4 @@ const Api = () => {
   )
 }
 
-export default api
+export default Api
