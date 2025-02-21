@@ -30,4 +30,6 @@ button{
 }
 
 
-input
+input:, button{
+
+}
