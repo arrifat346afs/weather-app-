@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <>
       <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchPress={searchPress} />
-      <h2>Weather in {weatherData.location.name}</h2>
+      <h2>Weather in {weatherData.name}</h2>
       {/* <p>{weatherData.current.temp_c}</p> */}
       {/* <img src={weatherData.current.condition.icon} alt="weather icon" /> */}
     </>
