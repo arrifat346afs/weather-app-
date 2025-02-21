@@ -22,7 +22,7 @@ const Home = () => {
 
   return (
     <div>
-      <Scarch scarchTarm={scarchTarm} setScarchTaem={setScarchTaem} />
+      <Scarch scarchTarm={scarchTarm} setScarchTaem={setScarchTaem} scarchPress={} />
     </div>
   );
 };
