@@ -6,6 +6,7 @@ const Scarch = ({ scarchTarm, setScarchTaem }) => {
 
   const scarchPress= ()=>{
     console.log("hellow")
+    con
   }
 
 
