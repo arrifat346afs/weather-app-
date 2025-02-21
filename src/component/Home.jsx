@@ -17,7 +17,7 @@ const Home = () => {
 
   const scarchPress= ()=>{
     fetch(`${api.url}current.json?key=${api.key}q=${scarchTarm}`)
-    .t
+    .then()
   }
 
 
