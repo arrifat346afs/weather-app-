@@ -15,7 +15,9 @@ const Home = () => {
   const [currentLocation, setCurrentLocation] = useState(null);
 
 
-  useEffect(()+>{})
+  useEffect(()=>{
+    
+  })
 
   const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
