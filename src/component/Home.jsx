@@ -41,6 +41,7 @@ const Home = () => {
     }
     return res.json()
   })
+  
  }
 
 
