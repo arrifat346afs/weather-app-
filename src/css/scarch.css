@@ -27,7 +27,7 @@ button{
     align-items: center;
     text-align: center;
     border: 2px solid rgb(147, 223, 253);
-    border-right: none;
+    border-left: none;
     font-size: larger;
     border-start-end-radius: 20px;
     border-end-end-radius: 20px;
