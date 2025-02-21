@@ -1,5 +1,5 @@
 import React from "react";
-import Scarch from "./component/Scarch";
+
 import { useState } from "react";
 
 
@@ -27,9 +27,12 @@ const Home = () => {
 
 
   return (
-    <div>
-      <Scarch scarchTarm={scarchTarm} setScarchTaem={setScarchTaem} scarchPress={scarchPress} />
-    </div>
+        <div className="scarch">
+          <input type="text" value={scarchTarm} onChange={(e) => setScarchTaem(e.target.value)} />
+          <button type="submit" onClick={scarchPress}>
+            <FiSearch />
+          </button>
+        </div>
   );
 };
 
