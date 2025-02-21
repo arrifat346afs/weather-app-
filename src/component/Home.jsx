@@ -33,7 +33,7 @@ const Home = () => {
   }, []);
 
 
-  fetchWeatherData(latitude, longitude)=>{}
+ const fetchWeatherData(latitude, longitude)=>{}
 
 
   const searchPress = () => {
