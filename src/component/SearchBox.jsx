@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 import "../css/scarch.css";
-const SearchBox = ({searchTerm,setSearchTerm,}) => {
+const SearchBox = ({searchTerm,setSearchTerm,searchPress}) => {
   return (
     <div className="scarch">
       <input
@@ -9,7 +9,7 @@ const SearchBox = ({searchTerm,setSearchTerm,}) => {
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button type="submit" onClick={scarchPress}>
+      <button type="submit" onClick={searchPress}>
         <FiSearch />
       </button>
     </div>
