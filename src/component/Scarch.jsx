@@ -6,7 +6,7 @@ const Scarch = () => {
   return (
     <div className="scarch">
       <input type="text" />
-      <button>
+      <button type="submit">
         <FiSearch />
       </button>
     </div>
