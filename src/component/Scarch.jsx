@@ -6,7 +6,7 @@ const Scarch = ({ scarchTarm, setScarchTaem }) => {
   return (
     <div className="scarch">
       <input type="text" onChange={(e) => setScarchTaem(e.target.value)} />
-      <button type="submit">
+      <button type="submit" onClick={}>
         <FiSearch />
       </button>
     </div>
