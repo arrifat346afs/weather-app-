@@ -25,6 +25,6 @@ button{
     align-items: center;
     text-align: center;
     border: none;
-    border-start-end-radius: 10px;
-    border-end-end-radius: 10px;
+    border-start-end-radius: 20px;
+    border-end-end-radius: 20px;
 }
