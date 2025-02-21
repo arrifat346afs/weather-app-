@@ -26,5 +26,5 @@ button{
     text-align: center;
     border: none;
     border-start-end-radius: 10px;
-    border
+    border-end-end-radius: 10px;
 }
