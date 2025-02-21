@@ -11,7 +11,7 @@ const api = {
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  const scarchPress = () => {
+  const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
       .then((res) => {
         if (!res.ok) {
