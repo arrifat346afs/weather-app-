@@ -10,7 +10,7 @@ const api = {
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [weatherData, setWeatherData] = useState(null);
+  const [weatherData, setWeatherData] = useState("");
 
   const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
