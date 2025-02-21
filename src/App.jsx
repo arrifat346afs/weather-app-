@@ -4,11 +4,11 @@ import { useState } from "react";
 
 
 function App() {
-  const [scarchTarm, setScarchTaem] = useState("")
+  
   return (
     <>
       
-      <Scarch scarchTarm={scarchTarm} setScarchTaem={setScarchTaem}/>
+    
     </>
   );
 }
