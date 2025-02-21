@@ -1,40 +1,39 @@
-.scarch{
-    padding: 10px;
-    /* background-color: aqua; */
-    display: flex;
-    justify-content: center;
+.scarch {
+  padding: 10px;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: center;
 }
 
-
-
-input{
-    background-color: #5ec1f7;
-    width: 30%;
-    height: 2.2rem;
-    outline: none;
-    padding: 10px;
-    border: 2px solid rgb(147, 223, 253);
-    border-start-start-radius: 20px;
-    border-end-start-radius: 20px;
+input {
+  background-color: #5ec1f7;
+  width: 30%;
+  height: 2.2rem;
+  outline: none;
+  padding: 10px;
+  border: 2px solid rgb(147, 223, 253);
+  border-start-start-radius: 20px;
+  border-end-start-radius: 20px;
 }
 
-button{
-    background-color: #5ec1f7;
-    height: 2.2rem;
-    width: 3.5rem;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 2px solid rgb(147, 223, 253);
-    border-left: none;
-    font-size: larger;
-    border-start-end-radius: 20px;
-    border-end-end-radius: 20px;
+button {
+  background-color: #5ec1f7;
+  height: 2.2rem;
+  width: 3.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid rgb(147, 223, 253);
+  border-left: none;
+  font-size: larger;
+  border-start-end-radius: 20px;
+  border-end-end-radius: 20px;
 }
 
-
-input:focus, button:focus{
-border: 2px solid #003cff;
+input:focus,
+button:focus {
+  background-color: #2285ba;
+  border: 2px solid #003cff;
 }
