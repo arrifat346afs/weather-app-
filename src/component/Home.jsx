@@ -1,6 +1,7 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { useState } from "react";
+import "../css/scarch.css";
 
 const api = {
   key: "911c12b46fee4dba8c5133138252002",
