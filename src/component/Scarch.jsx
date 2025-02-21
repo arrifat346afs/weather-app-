@@ -3,7 +3,7 @@ import "../css/scarch.css";
 
 const Scarch = () => {
   return (
-    <div>
+    <div className="scarch">
       <input type="text" />
       <button>
         <img src="search.svg" alt="search" />
