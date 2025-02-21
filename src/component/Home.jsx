@@ -10,6 +10,11 @@ const BASE_URL = "http://api.weatherapi.com/v1";
 
 const Home = () => {
   const [scarchTarm, setScarchTaem] = useState("");
+
+
+  
+
+
   return (
     <div>
       <Scarch scarchTarm={scarchTarm} setScarchTaem={setScarchTaem} />
