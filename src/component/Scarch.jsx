@@ -7,7 +7,7 @@ const Scarch = () => {
     <div className="scarch">
       <input type="text" />
       <button>
-        <img src="search.svg" alt="search" />
+        <CiSearch />
       </button>
     </div>
   );
