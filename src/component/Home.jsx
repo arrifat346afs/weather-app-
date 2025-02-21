@@ -19,7 +19,7 @@ const Home = () => {
     fetch(`${api.url}current.json?key=${api.key}q=${scarchTarm}`)
     .then((res)=> res.json())
     .then((result)=>{
-      console.log(resu)
+      console.log(result)
     })
   }
 
