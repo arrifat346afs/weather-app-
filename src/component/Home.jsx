@@ -21,10 +21,20 @@ const Home = () => {
         (position)=>{
           const { latitude, longitude }= position.coords
           setCurrentLocation({latitude, longitude})
+          fetchWeatherData(latitude, longitude);
+        },
+        (error) => {
+          console.error("Error getting geolocation:", error);
         }
-      )
+      );
+    } else {
+      console.error("Geolocation is not supported by this browser.");
     }
-  })
+  }, []);
+
+
+  
+
 
   const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
