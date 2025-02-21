@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import { useState } from "react";
 import SearchBox from "./SearchBox";
@@ -13,6 +13,9 @@ const Home = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [searchHistory, setSearchHistory] = useState([]);
   const [currentLocation, setCurrentLocation] = useState(null);
+
+
+  useEffect(()+>{})
 
   const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
