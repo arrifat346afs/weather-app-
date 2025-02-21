@@ -4,11 +4,6 @@ import "../css/scarch.css";
 
 const Scarch = ({ scarchTarm, setScarchTaem }) => {
 
-  const scarchPress= ()=>{
-    console.log("hellow")
-    console.log(scarchTarm)
-  }
-
 
 
   return (
