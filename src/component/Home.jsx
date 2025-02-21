@@ -19,7 +19,7 @@ const Home = () => {
     if(navigator.geolocation){
       navigator.geolocation.getCurrentPosition(
         (position)=>{
-          const {}
+          const { latitude, longitude }= position.
         }
       )
     }
