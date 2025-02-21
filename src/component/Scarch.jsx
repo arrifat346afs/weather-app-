@@ -2,7 +2,7 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import "../css/scarch.css";
 
-const Scarch = () => {
+const Scarch = ({}) => {
   return (
     <div className="scarch">
       <input type="text" />
