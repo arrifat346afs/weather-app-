@@ -9,7 +9,7 @@ const api = {
 };
 
 const Home = () => {
-  const [scarchTarm, setScarchTaem] = useState("");
+  const [scarchTarm, setScarchTarm] = useState("");
 
   const scarchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
@@ -33,7 +33,7 @@ const Home = () => {
       <input
         type="text"
         value={scarchTarm}
-        onChange={(e) => setScarchTaem(e.target.value)}
+        onChange={(e) => setScarchTarm(e.target.value)}
       />
       <button type="submit" onClick={scarchPress}>
         <FiSearch />
