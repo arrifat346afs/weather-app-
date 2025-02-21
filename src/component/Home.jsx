@@ -33,7 +33,7 @@ const Home = () => {
       <input
         type="text"
         value={scarchTarm}
-        onChange={(e) => setScarchTarm(e.target.value)}
+        onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button type="submit" onClick={scarchPress}>
         <FiSearch />
