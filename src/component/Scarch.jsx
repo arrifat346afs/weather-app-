@@ -1,5 +1,5 @@
 import React from "react";
-import { CiSearch } from "react-icons/ci";
+import { FiSearch } from "react-icons/fi";
 import "../css/scarch.css";
 
 const Scarch = () => {
@@ -7,7 +7,7 @@ const Scarch = () => {
     <div className="scarch">
       <input type="text" />
       <button>
-        <CiSearch />
+        <FiSearch />
       </button>
     </div>
   );
