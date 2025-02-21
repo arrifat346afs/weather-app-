@@ -32,6 +32,7 @@ const Home = () => {
           ) {
             newHistory.push(result);
           }
+          return newHistory;
         });
       })
       .catch((error) => {
