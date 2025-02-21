@@ -34,7 +34,7 @@ const Home = () => {
 
 
  const fetchWeatherData=(latitude, longitude)=>{
-  fetch(`${api.}`)
+  fetch(`${api.url}`)
  }
 
 
