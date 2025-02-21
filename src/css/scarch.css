@@ -6,7 +6,7 @@
 }
 
 .scarch:focus{
-    border: 2px solid;
+    border: 2px solid blue;
 }
 
 input{
