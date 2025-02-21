@@ -30,7 +30,7 @@ const Home = () => {
   return (
     <>
       <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchPress={searchPress} />
-      <p>{searchTerm} tem</p>
+      <p>{searchTerm}</p>
     </>
   );
 };
