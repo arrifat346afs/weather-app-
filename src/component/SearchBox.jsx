@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSearch } from "react-icons/fi";
 import "../css/scarch.css";
-const SearchBox = () => {
+const SearchBox = ({searchTerm,setSearchTerm,}) => {
   return (
     <div className="scarch">
       <input
