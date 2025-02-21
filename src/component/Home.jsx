@@ -17,7 +17,9 @@ const Home = () => {
 
   useEffect(()=>{
     if(navigator.geolocation){
-      navigator.geolocation.
+      navigator.geolocation.getCurrentPosition(
+        
+      )
     }
   })
 
