@@ -37,7 +37,7 @@ const Home = () => {
   fetch(`${api.url}/current.jsaon?key=${api.key}&q=${latitude},${longitude}`)
   .then((res)=>{
     if(!res.ok){
-      throw new Error(``)
+      throw new Error(`HTTP Error! Sta`)
     }
   })
  }
