@@ -17,7 +17,7 @@ const Home = () => {
 
   useEffect(()=>{
     if(navigator.geolocation){
-      
+      navigator.geolocation.getcu
     }
   })
 
