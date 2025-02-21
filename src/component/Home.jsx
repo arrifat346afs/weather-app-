@@ -10,7 +10,7 @@ const api = {
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [weatherData, setWeatherData] = useState("");
+  const [weatherData, setWeatherData] = useState(null);
 
   const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
@@ -31,9 +31,8 @@ const Home = () => {
   return (
     <>
       <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchPress={searchPress} />
-      <h2>Weather in {weatherData.name}</h2>
-      {/* <p>{weatherData.current.temp_c}</p> */}
-      {/* <img src={weatherData.current.condition.icon} alt="weather icon" /> */}
+      <h2>Weather in {weatherData.location.name}</h2>
+      <p>Temperature: {weatherData.current.temp_c}°C</p>
     </>
   );
 };
