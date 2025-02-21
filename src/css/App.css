@@ -3,7 +3,7 @@
 body{
   background-image: url(/src/assets/app.jpg);
   font-family: 'Courier New', Courier, monospace;
-  font-size: small;
+  font-size: 2px
   justify-content: center;
   text-align: center;
   padding: 10px;
