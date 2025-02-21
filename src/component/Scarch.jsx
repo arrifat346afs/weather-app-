@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import "../css/scarch.css";
 
 const Scarch = () => {
   return (
     <div>
-     <input type="text" className="w-100 h-8 bg-[#815d67] p-3 rounded-md focus:drop-shadow-xl"/>
+      <input type="text" />
+      <button>
+        <img src="search.svg" alt="search" />
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default Scarch
+export default Scarch;

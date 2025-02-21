@@ -1,12 +1,10 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body{
   background-image: url(/src/assets/app.jpg);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
   justify-content: center;
   text-align: center;
-  padding: 1rem;
+  color: whitesmoke;
 }
