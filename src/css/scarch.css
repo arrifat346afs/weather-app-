@@ -8,7 +8,7 @@
 
 
 input{
-    background-color: #e9b9b9;
+    /* background-color: #e9b9b9; */
     width: 30%;
     height: 2.2rem;
     outline: none;
@@ -19,7 +19,7 @@ input{
 }
 
 button{
-    background-color: #7a5c5c;
+    /* background-color: #7a5c5c; */
     height: 2.2rem;
     width: 3.5rem;
     display: flex;
