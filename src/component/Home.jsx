@@ -32,7 +32,7 @@ const Home = () => {
     <div className="scarch">
       <input
         type="text"
-        value={scarchTarm}
+        value={sc}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
       <button type="submit" onClick={scarchPress}>
