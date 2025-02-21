@@ -26,7 +26,7 @@ button{
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: none;
+    border: 2px solid rgb(147, 223, 253);
     font-size: larger;
     border-start-end-radius: 20px;
     border-end-end-radius: 20px;
