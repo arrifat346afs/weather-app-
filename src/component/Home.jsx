@@ -27,9 +27,11 @@ const Home = () => {
       });
   };
 
-  return (<>
-  <SearchBox/>
-  </>);
+  return (
+    <>
+      <SearchBox />
+    </>
+  );
 };
 
 export default Home;
