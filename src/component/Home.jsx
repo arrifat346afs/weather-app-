@@ -12,7 +12,12 @@ const Home = () => {
   const [scarchTarm, setScarchTaem] = useState("");
 
 
-  
+  const scarchPress= ()=>{
+    console.log("hellow")
+    console.log(scarchTarm)
+  }
+
+
 
 
   return (
