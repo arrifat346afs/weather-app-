@@ -5,7 +5,7 @@ import "../css/scarch.css";
 const Scarch = ({scarchTarm,setScarchTaem}) => {
   return (
     <div className="scarch">
-      <input type="text" onClick={}/>
+      <input type="text" onClick={(e)=>}/>
       <button type="submit">
         <FiSearch />
       </button>
