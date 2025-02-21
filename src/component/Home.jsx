@@ -21,7 +21,7 @@ const Home = () => {
         return res.json();
       })
       .then((result) => {
-        console.log(result);
+        setWeatherData(result);
       })
       .catch((error) => {
         console.error("Error fetching weather data:", error);
