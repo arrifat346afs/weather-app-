@@ -35,7 +35,7 @@ const Home = () => {
 
  const fetchWeatherData=(latitude, longitude)=>{
   fetch(`${api.url}/current.jsaon?key=${api.key}&q=${latitude},${longitude}`)
-  
+  .then((res)=)
  }
 
 
