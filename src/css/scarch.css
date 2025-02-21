@@ -1,6 +1,6 @@
 .scarch{
     padding: 10px;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
 }
