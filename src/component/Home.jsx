@@ -39,6 +39,7 @@ const Home = () => {
     if(!res.ok){
       throw new Error(`HTTP Error! Status:${res.status}`)
     }
+    
   })
  }
 
