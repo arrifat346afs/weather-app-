@@ -1,5 +1,6 @@
 import React from 'react'
-
+import Scarch from "./component/Scarch";
+import { useState } from "react";
 const Home = () => {
     const [scarchTarm, setScarchTaem] = useState("")
   return (
