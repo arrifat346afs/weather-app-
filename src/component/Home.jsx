@@ -11,13 +11,22 @@ const api = {
 const Home = () => {
   const [scarchTarm, setScarchTaem] = useState("");
 
-  const scarchPress = () => {
-    fetch(`${api.url}current.json?key=${api.key}q=${scarchTarm}`)
-      .then((res) => res.json())
+  const searchPress = () => {
+    fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+        return res.json();
+      })
       .then((result) => {
         console.log(result);
+      })
+      .catch((error) => {
+        console.error("Error fetching weather data:", error);
       });
   };
+  
 
   return (
     <div className="scarch">
@@ -26,7 +35,7 @@ const Home = () => {
         value={scarchTarm}
         onChange={(e) => setScarchTaem(e.target.value)}
       />
-      <button type="submit" onClick={scarchPress}>
+      <button type="submit" onClick={searchPress}>
         <FiSearch />
       </button>
     </div>
