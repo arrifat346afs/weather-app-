@@ -9,7 +9,7 @@ const api = {
 };
 
 const Home = () => {
-  const [scarchTarm, setScarchTarm] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
 
   const scarchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
