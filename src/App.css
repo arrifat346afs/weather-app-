@@ -8,4 +8,5 @@ body{
   background-image: url(/src/assets/app.jpg);
   justify-content: center;
   text-align: center;
+  padding: 2rem;
 }
