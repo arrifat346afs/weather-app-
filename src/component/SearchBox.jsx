@@ -15,6 +15,7 @@ const SearchBox = ({searchTerm,setSearchTerm,searchPress}) => {
         type="text"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
+        onKeyDown={handleKeyPress} 
       />
       <button type="submit" onClick={searchPress}>
         <FiSearch />
