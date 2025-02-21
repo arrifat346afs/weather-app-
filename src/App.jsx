@@ -8,7 +8,7 @@ const BASE_URL = "http://api.weatherapi.com/v1";
 function App() {
   return (
     <>
-      <h1>Hellow worl</h1>
+      
       <Scarch />
     </>
   );
