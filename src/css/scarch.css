@@ -5,7 +5,9 @@
     justify-content: center;
 }
 
-.scarch:focus
+.scarch:focus{
+    border: ;
+}
 
 input{
     width: 30%;
