@@ -13,8 +13,7 @@ const Home = () => {
 
 
   const scarchPress= ()=>{
-    console.log("hellow")
-    console.log(scarchTarm)
+    fetch()
   }
 
 
