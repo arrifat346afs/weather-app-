@@ -30,6 +30,6 @@ button{
 }
 
 
-input:, button{
+input:focus, button:focus{
 
 }
