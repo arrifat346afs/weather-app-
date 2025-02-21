@@ -1,4 +1,5 @@
 import React from "react";
+import { CiSearch } from "react-icons/ci";
 import "../css/scarch.css";
 
 const Scarch = () => {
