@@ -25,7 +25,7 @@ const Home = () => {
         setWeatherData(result);
         setSearchHistory((prevHistory)=>{
           const newHistory = [...prevHistory];
-          if(!newHistory.some(item=>))
+          if(!newHistory.some(item=> item.location.name === res))
         })
       })
       .catch((error) => {
