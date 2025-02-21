@@ -32,6 +32,7 @@ const Home = () => {
     <>
       <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchPress={searchPress} />
       <p>{weatherData.location.name}</p>
+      <p>{weatherData.current.name}</p>
     </>
   );
 };
