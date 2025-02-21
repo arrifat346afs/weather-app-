@@ -41,7 +41,23 @@ const Home = () => {
     }
     return res.json()
   })
-  
+  .then((result) => {
+    setWeatherData(result);
+    setSearchHistory((prevHistory) => {
+      const newHistory = [...prevHistory];
+      if (
+        !newHistory.some(
+          (item) => item.location.name === result.location.name
+        )
+      ) {
+        newHistory.push(result);
+      }
+      return newHistory;
+    });
+  })
+  .catch((error) => {
+    console.error("Error fetching weather data:", error);
+  });
  }
 
 
