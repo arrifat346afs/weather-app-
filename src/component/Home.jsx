@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <>
       <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchPress={searchPress} />
-      <p>{W}</p>
+      <p>{Weath}</p>
     </>
   );
 };
