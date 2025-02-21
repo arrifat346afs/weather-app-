@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       
-      <Scarch />
+      <Scarch scarchTarm={scarchTarm}/>
     </>
   );
 }
