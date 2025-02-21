@@ -22,4 +22,5 @@ button{
     width: 2.5rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
