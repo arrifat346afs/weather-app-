@@ -2,6 +2,13 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import "../css/scarch.css";
 const SearchBox = ({searchTerm,setSearchTerm,searchPress}) => {
+    const handleKeyPress = (event) => {
+        if (event.key === "Enter") {
+          searchPress();
+        }
+      };
+
+
   return (
     <div className="scarch">
       <input
