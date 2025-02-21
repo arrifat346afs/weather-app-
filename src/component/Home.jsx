@@ -14,56 +14,7 @@ const Home = () => {
   const [searchHistory, setSearchHistory] = useState([]);
   const [currentLocation, setCurrentLocation] = useState(null);
 
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const { latitude, longitude } = position.coords;
-          setCurrentLocation({ latitude, longitude });
-          fetchWeatherData(latitude, longitude);
-        },
-        (error) => {
-          console.error("Error getting geolocation:", error);
-        }
-      );
-    } else {
-      console.error("Geolocation is not supported by this browser.");
-    }
-  }, []);
-
-  const fetchWeatherData = (latitude, longitude) => {
-    console.log(`Fetching weather data for: ${latitude}, ${longitude}`);
-    const locationQuery = `${latitude},${longitude}`; // Ensure coordinates are passed properly
-    const url = `${api.url}/current.json?key=${api.key}&q=${encodeURIComponent(
-      locationQuery
-    )}`;
-
-    fetch(url)
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((result) => {
-        console.log("Weather Data:", result);
-        setWeatherData(result);
-        setSearchHistory((prevHistory) => {
-          const newHistory = [...prevHistory];
-          if (
-            !newHistory.some(
-              (item) => item.location.name === result.location.name
-            )
-          ) {
-            newHistory.push(result);
-          }
-          return newHistory;
-        });
-      })
-      .catch((error) => {
-        console.error("Error fetching weather data:", error);
-      });
-  };
+  
 
   const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
