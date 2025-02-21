@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       
-      <Scarch scarchTarm={scarchTarm}/>
+      <Scarch scarchTarm={scarchTarm} setScarchTaem={}/>
     </>
   );
 }
