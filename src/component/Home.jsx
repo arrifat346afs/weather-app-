@@ -2,7 +2,6 @@ import React from "react";
 
 import { useState } from "react";
 
-
 const api = {
   key: "911c12b46fee4dba8c5133138252002",
   url: "http://api.weatherapi.com/v1",
@@ -26,11 +25,8 @@ const Home = () => {
         console.error("Error fetching weather data:", error);
       });
   };
-  
 
-  return (
-<></>
-  );
+  return <></>;
 };
 
 export default Home;
