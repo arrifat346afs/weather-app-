@@ -16,7 +16,7 @@ const Home = () => {
 
 
   const scarchPress= ()=>{
-    fetch(`${api.url}current.json?`)
+    fetch(`${api.url}current.json?key=${}`)
   }
 
 
