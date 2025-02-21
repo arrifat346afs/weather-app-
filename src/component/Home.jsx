@@ -23,12 +23,16 @@ const Home = () => {
       })
       .then((result) => {
         setWeatherData(result);
-        setSearchHistory((prevHistory)=>{
+        setSearchHistory((prevHistory) => {
           const newHistory = [...prevHistory];
-          if(!newHistory.some(item=> item.location.name === result.location.name)){
-            newHistory.p
+          if (
+            !newHistory.some(
+              (item) => item.location.name === result.location.name
+            )
+          ) {
+            newHistory.push(result);
           }
-        })
+        });
       })
       .catch((error) => {
         console.error("Error fetching weather data:", error);
