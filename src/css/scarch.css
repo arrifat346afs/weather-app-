@@ -22,6 +22,7 @@ button{
     background-color: #5ec1f7;
     height: 2.2rem;
     width: 3.5rem;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
