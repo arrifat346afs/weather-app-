@@ -26,7 +26,9 @@ const Home = () => {
       });
   };
 
-  return <></>;
+  return (<>
+  <Scar
+  </>);
 };
 
 export default Home;
