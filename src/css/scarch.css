@@ -5,5 +5,5 @@ input{
     padding: 10px;
     border: none;
     border-start-start-radius: 20px;
-    
+    border-end-start-radius: 20px;
 }
