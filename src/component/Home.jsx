@@ -35,7 +35,7 @@ const Home = () => {
         value={scarchTarm}
         onChange={(e) => setScarchTaem(e.target.value)}
       />
-      <button type="submit" onClick={searchPress}>
+      <button type="submit" onClick={scarchPress}>
         <FiSearch />
       </button>
     </div>
