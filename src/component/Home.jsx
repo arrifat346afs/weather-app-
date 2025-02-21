@@ -4,7 +4,7 @@ const Home = () => {
     const [scarchTarm, setScarchTaem] = useState("")
   return (
     <div>
-      
+        <Scarch scarchTarm={scarchTarm} setScarchTaem={setScarchTaem}/>
     </div>
   )
 }
