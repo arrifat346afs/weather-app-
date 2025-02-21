@@ -23,6 +23,7 @@ const Home = () => {
       })
       .then((result) => {
         setWeatherData(result);
+        setSearchHistory()
       })
       .catch((error) => {
         console.error("Error fetching weather data:", error);
