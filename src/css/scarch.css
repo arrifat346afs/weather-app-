@@ -5,9 +5,7 @@
     justify-content: center;
 }
 
-.scarch:focus{
-    border: 2px solid blue;
-}
+
 
 input{
     width: 30%;
@@ -30,3 +28,6 @@ button{
     border-start-end-radius: 20px;
     border-end-end-radius: 20px;
 }
+
+
+input
