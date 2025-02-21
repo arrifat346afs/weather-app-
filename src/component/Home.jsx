@@ -30,9 +30,28 @@ const Home = () => {
 
   return (
     <>
-      <SearchBox searchTerm={searchTerm} setSearchTerm={setSearchTerm} searchPress={searchPress} />
-      <h2>Weather in {weatherData.location.name}</h2>
-      <p>Temperature: {weatherData.current.temp_c}°C</p>
+      <SearchBox
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        searchPress={searchPress}
+      />
+      {weatherData ? (
+        weatherData.location ? (
+          <div>
+            <h2>Weather in {weatherData.location.name}</h2>
+            <p>Temperature: {weatherData.current.temp_c}°C</p>
+            <p>Condition: {weatherData.current.condition.text}</p>
+            <img
+              src={`https:${weatherData.current.condition.icon}`}
+              alt="Weather icon"
+            />
+          </div>
+        ) : (
+          <p>No location data available.</p>
+        )
+      ) : (
+        <p>Enter a city to get the weather data.</p>
+      )}
     </>
   );
 };
