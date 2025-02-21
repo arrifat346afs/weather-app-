@@ -4,7 +4,9 @@ import "../css/scarch.css";
 
 const Scarch = ({ scarchTarm, setScarchTaem }) => {
 
-  const scarchPress= 
+  const scarchPress= ()=>{
+    
+  }
 
 
 
