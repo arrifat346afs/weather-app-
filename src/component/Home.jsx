@@ -16,7 +16,9 @@ const Home = () => {
 
 
   useEffect(()=>{
-    
+    if(navigator.geolocation){
+      
+    }
   })
 
   const searchPress = () => {
