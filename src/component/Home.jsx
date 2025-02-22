@@ -31,7 +31,7 @@ const Home = () => {
           const cityName =data.address.city || data.address.town || data.address.village || "Unknown";
           fetchWeather(cityName)
          })
-         .catch(()=> setError)
+         .catch(()=> setError(" Fail to fetch location"))
       }
     )
   }, []);
