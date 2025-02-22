@@ -14,6 +14,13 @@ const Home = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [searchHistory, setSearchHistory] = useState([]);
 
+useEffect(() => {
+  first
+
+  return () => {
+    second
+  }
+}, [third])
 
 
   const searchPress = () => {
