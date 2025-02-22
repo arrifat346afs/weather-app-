@@ -6,6 +6,7 @@ import SearchBox from "./SearchBox";
 const api = {
   key: "911c12b46fee4dba8c5133138252002",
   url: "http://api.weatherapi.com/v1",
+  geocodeUrl: "https://nominatim.openstreetmap.org/reverse",
 };
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
   const [searchHistory, setSearchHistory] = useState([]);
 
 
-  
+
   const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
       .then((res) => {
