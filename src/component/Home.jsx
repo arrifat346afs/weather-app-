@@ -15,7 +15,9 @@ const Home = () => {
   const [searchHistory, setSearchHistory] = useState([]);
 
 useEffect(() => {
-if(!navigator.geo)
+if(!navigator.geolocation){
+  setE
+}
 }, [])
 
 
