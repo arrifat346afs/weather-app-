@@ -15,7 +15,7 @@ const Home = () => {
   const [searchHistory, setSearchHistory] = useState([]);
 
 useEffect(() => {
-if()
+if(!navigator.geo)
 }, [])
 
 
