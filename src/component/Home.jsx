@@ -20,7 +20,9 @@ const Home = () => {
     }
 
     navigator.geolocation.getCurrentPosition(
-      (position)
+      (position)=>{
+        
+      }
     )
   }, []);
 
