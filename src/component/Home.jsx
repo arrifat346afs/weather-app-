@@ -11,6 +11,7 @@ const api = {
 };
 
 const Home = () => {
+  const [location, setLocation] = useState({ loaded: false, city: "", lat: 0, lng: 0 });
   const [searchTerm, setSearchTerm] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [searchHistory, setSearchHistory] = useState([]);
