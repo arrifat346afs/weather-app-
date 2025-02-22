@@ -14,12 +14,13 @@ const Home = () => {
   const [weatherData, setWeatherData] = useState(null);
   const [searchHistory, setSearchHistory] = useState([]);
 
-useEffect(() => {
-if(!navigator.geolocation){
-  setError("GeoLocation is not Saported in this Browser")
-}
-}, [])
+  useEffect(() => {
+    if (!navigator.geolocation) {
+      setError("GeoLocation is not Saported in this Browser");
+    }
 
+    nav
+  }, []);
 
   const searchPress = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
