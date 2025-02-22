@@ -28,6 +28,7 @@ const Home = () => {
          .then((res)=> res.json())
          .then((data)=>{
           const cityName =data.address.city || data.address.town || data.address.village || "Unknown";
+          
          })
       }
     )
