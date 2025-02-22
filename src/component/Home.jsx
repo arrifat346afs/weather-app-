@@ -15,12 +15,8 @@ const Home = () => {
   const [searchHistory, setSearchHistory] = useState([]);
 
 useEffect(() => {
-  first
-
-  return () => {
-    second
-  }
-}, [third])
+if()
+}, [])
 
 
   const searchPress = () => {
