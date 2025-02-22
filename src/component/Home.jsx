@@ -32,7 +32,8 @@ const Home = () => {
           fetchWeather(cityName)
          })
          .catch(()=> setError(" Fail to fetch location name"))
-      }
+      },
+      (error) =>
     )
   }, []);
 
