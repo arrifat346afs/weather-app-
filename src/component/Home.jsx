@@ -60,7 +60,9 @@ const Home = () => {
         console.error("Error fetching weather data:", error);
       });
   };
-
+  const searchPress = () => {
+    fetchWeather(searchTerm.trim());
+  };
   return (
     <>
       <SearchBox
