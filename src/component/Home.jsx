@@ -28,13 +28,13 @@ const Home = () => {
          .then((res)=> res.json())
          .then((data)=>{
           const cityName =data.address.city || data.address.town || data.address.village || "Unknown";
-          
+
          })
       }
     )
   }, []);
 
-  const searchPress = () => {
+  const fetchWeather = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
       .then((res) => {
         if (!res.ok) {
