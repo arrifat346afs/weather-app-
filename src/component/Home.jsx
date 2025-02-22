@@ -16,7 +16,7 @@ const Home = () => {
 
 useEffect(() => {
 if(!navigator.geolocation){
-  setE
+  setError()
 }
 }, [])
 
