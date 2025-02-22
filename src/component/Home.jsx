@@ -16,26 +16,28 @@ const Home = () => {
   const [searchHistory, setSearchHistory] = useState([]);
   const [error, setError] = useState(null);
 
-  // useEffect(() => {
-  //   if (!navigator.geolocation) {
-  //     setError("GeoLocation is not Saported in this Browser");
-  //   }
+  useEffect(() => {
+    if (!navigator.geolocation) {
+      setError("Geolocation is not supported by your browser.");
+      return;
+    }
 
-  //   navigator.geolocation.getCurrentPosition(
-  //     (position)=>{
-  //       const { latitude, longitude } = position.coords;
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
 
-  //       fetch(`${api.geocodeUrl}?lat=${latitude}&lon=${longitude}&format=json`)
-  //        .then((res)=> res.json())
-  //        .then((data)=>{
-  //         const cityName =data.address.city || data.address.town || data.address.village || "Unknown";
-  //         fetchWeather(cityName)
-  //        })
-  //        .catch(()=> setError(" Fail to fetch location name"))
-  //     },
-  //     (error) => setError(error.message)
-  //   )
-  // }, []);
+        // Reverse geocoding to get accurate city name
+        fetch(`${api.geocodeUrl}?lat=${latitude}&lon=${longitude}&format=json`)
+          .then((res) => res.json())
+          .then((data) => {
+            const cityName = data.address.city || data.address.town || data.address.village || "Unknown";
+            fetchWeather(cityName);
+          })
+          .catch(() => setError("Failed to fetch location name."));
+      },
+      (error) => setError(error.message)
+    );
+  }, []);
 
   const fetchWeather = () => {
     fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
