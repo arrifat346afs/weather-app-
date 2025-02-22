@@ -14,6 +14,7 @@ const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [searchHistory, setSearchHistory] = useState([]);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     if (!navigator.geolocation) {
