@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import { useState } from "react";
 import SearchBox from "./SearchBox";
+import { data } from "motion/react-client";
 
 const api = {
   key: "911c12b46fee4dba8c5133138252002",
@@ -25,7 +26,7 @@ const Home = () => {
 
         fetch(`${api.geocodeUrl}?lat=${latitude}&lon=${longitude}&format=json`)
          .then((res)=> res.json())
-         .then
+         .then((data))
       }
     )
   }, []);
