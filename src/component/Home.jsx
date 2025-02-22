@@ -16,7 +16,7 @@ const Home = () => {
 
 useEffect(() => {
 if(!navigator.geolocation){
-  setError("Geo")
+  setError("GeoLocation is not Saported in this ")
 }
 }, [])
 
