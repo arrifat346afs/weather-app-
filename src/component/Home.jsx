@@ -24,7 +24,7 @@ const Home = () => {
         const { latitude, longitude } = position.coords;
 
         fetch(`${api.geocodeUrl}?lat=${latitude}&lon=${longitude}&format=json`)
-        
+         .then(res)
       }
     )
   }, []);
