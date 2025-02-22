@@ -25,7 +25,7 @@ const Home = () => {
 
         fetch(`${api.geocodeUrl}?lat=${latitude}&lon=${longitude}&format=json`)
          .then((res)=> res.json())
-         .th
+         .then
       }
     )
   }, []);
