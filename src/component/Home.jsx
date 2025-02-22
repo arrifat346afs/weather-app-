@@ -27,7 +27,7 @@ const Home = () => {
         fetch(`${api.geocodeUrl}?lat=${latitude}&lon=${longitude}&format=json`)
          .then((res)=> res.json())
          .then((data)=>{
-          const cityName =data.address.city|| data.address
+          const cityName =data.address.city|| data.address.
          })
       }
     )
