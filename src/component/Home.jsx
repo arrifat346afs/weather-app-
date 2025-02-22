@@ -19,7 +19,9 @@ const Home = () => {
       setError("GeoLocation is not Saported in this Browser");
     }
 
-    navigator.geolocation.getCurrentPosition
+    navigator.geolocation.getCurrentPosition(
+      (posi)
+    )
   }, []);
 
   const searchPress = () => {
