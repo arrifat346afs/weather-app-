@@ -11,7 +11,12 @@ const api = {
 };
 
 const Home = () => {
-  const [location, setLocation] = useState({ loaded: false, city: "", lat: 0, lng: 0 });
+  const [location, setLocation] = useState({
+    loaded: false,
+    city: "",
+    lat: 0,
+    lng: 0,
+  });
   const [searchTerm, setSearchTerm] = useState("");
   const [weatherData, setWeatherData] = useState(null);
   const [searchHistory, setSearchHistory] = useState([]);
@@ -31,8 +36,17 @@ const Home = () => {
         fetch(`${api.geocodeUrl}?lat=${latitude}&lon=${longitude}&format=json`)
           .then((res) => res.json())
           .then((data) => {
-            const cityName = data.address.city || data.address.town || data.address.village || "Unknown";
-            setLocation({ loaded: true, city: cityName, lat: latitude, lng: longitude });
+            const cityName =
+              data.address.city ||
+              data.address.town ||
+              data.address.village ||
+              "Unknown";
+            setLocation({
+              loaded: true,
+              city: cityName,
+              lat: latitude,
+              lng: longitude,
+            });
             fetchWeather(cityName);
           })
           .catch(() => setError("Failed to fetch location name."));
@@ -41,8 +55,13 @@ const Home = () => {
     );
   }, []);
 
-  const fetchWeather = () => {
-    fetch(`${api.url}/current.json?key=${api.key}&q=${searchTerm}`)
+  const fetchWeather = (query) => {
+    if (!query) {
+      setError("Please enter a location.");
+      return;
+    }
+
+    fetch(`${api.weatherUrl}/current.json?key=${api.weatherKey}&q=${query}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
@@ -62,11 +81,11 @@ const Home = () => {
           }
           return newHistory;
         });
+        setError(null);
       })
-      .catch((error) => {
-        console.error("Error fetching weather data:", error);
-      });
+      .catch(() => setError("Error fetching weather data. Please try again."));
   };
+
   const searchPress = () => {
     fetchWeather(searchTerm.trim());
   };
