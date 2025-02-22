@@ -33,7 +33,7 @@ const Home = () => {
          })
          .catch(()=> setError(" Fail to fetch location name"))
       },
-      (error) => setError
+      (error) => setError(error.message)
     )
   }, []);
 
