@@ -23,7 +23,7 @@ const Home = () => {
       (position)=>{
         const { latitude, longitude } = position.coords;
 
-        fetch(`${api.geocodeUrl}?lat=`)
+        fetch(`${api.geocodeUrl}?lat=${latitude}&`)
       }
     )
   }, []);
