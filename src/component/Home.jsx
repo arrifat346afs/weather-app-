@@ -115,14 +115,14 @@ const Home = () => {
         <p>Enter a city to get the weather data.</p>
       )}
 
-      <h3>Search History</h3>
+      {/* <h3>Search History</h3>
       <ul>
         {searchHistory.map((item, index) => (
           <li key={index}>
             {item.location.name} - {item.current.temp_c}°C
           </li>
         ))}
-      </ul>
+      </ul> */}
     </>
   );
 };
