@@ -1,3 +1,5 @@
-.home{
-justify-content: center;
+.home {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
