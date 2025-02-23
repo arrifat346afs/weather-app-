@@ -91,7 +91,7 @@ const Home = () => {
   };
   return (
     <>
-    <img src="" alt="" />
+    <img src="cloud.png" alt="" />
       <SearchBox
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
