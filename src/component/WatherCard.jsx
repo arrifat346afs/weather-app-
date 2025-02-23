@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const WatherCard = ({weatherData}) => {
+const WatherCard = ({ weatherData }) => {
   return (
-    <div className='wather'>
-       {weatherData ? (
+    <div className="wather-card">
+      {weatherData ? (
         weatherData.location ? (
           <div>
             <h2>Weather in {weatherData.location.name}</h2>
@@ -21,7 +21,7 @@ const WatherCard = ({weatherData}) => {
         <p>Enter a city to get the weather data.</p>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default WatherCard
+export default WatherCard;
