@@ -90,7 +90,7 @@ const Home = () => {
     fetchWeather(searchTerm.trim());
   };
   return (
-    <>
+    <div>
     <img src="cloud.png" alt="" />
       <SearchBox
         searchTerm={searchTerm}
@@ -107,7 +107,7 @@ const Home = () => {
           </li>
         ))}
       </ul> */}
-    </>
+    <div/>
   );
 };
 
