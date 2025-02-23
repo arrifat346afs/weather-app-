@@ -2,10 +2,10 @@ import React from "react";
 import "../css/wathercard.css";
 const WatherCard = ({ weatherData }) => {
   return (
-    <div className="wather-card">
+    <div>
       {weatherData ? (
         weatherData.location ? (
-          <div>
+          <div className="wather-card">
             <h2>Weather in {weatherData.location.name}</h2>
             <img
               src={`https:${weatherData.current.condition.icon}`}
