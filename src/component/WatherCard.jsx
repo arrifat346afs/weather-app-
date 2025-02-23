@@ -7,7 +7,7 @@ const WatherCard = ({ weatherData }) => {
         weatherData.location ? (
           <div>
             <h2>Weather in {weatherData.location.name}</h2>
-            <img className="wather-"
+            <img className="wather-img"
               src={`https:${weatherData.current.condition.icon}`}
               alt="Weather icon"
             />
