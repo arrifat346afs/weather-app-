@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import SearchBox from "./SearchBox";
 import WatherCard from "./WatherCard";
+import '../css/home'
 
 const api = {
   weatherKey: "911c12b46fee4dba8c5133138252002",
