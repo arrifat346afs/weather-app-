@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import SearchBox from "./SearchBox";
 import { data } from "motion/react-client";
+import WatherCard from "./WatherCard";
 
 const api = {
   weatherKey: "911c12b46fee4dba8c5133138252002",
@@ -97,7 +98,7 @@ const Home = () => {
         setSearchTerm={setSearchTerm}
         searchPress={searchPress}
       />
-     
+     <WatherCard />
 
       {/* <h3>Search History</h3>
       <ul>
