@@ -97,23 +97,7 @@ const Home = () => {
         setSearchTerm={setSearchTerm}
         searchPress={searchPress}
       />
-      {weatherData ? (
-        weatherData.location ? (
-          <div>
-            <h2>Weather in {weatherData.location.name}</h2>
-            <img
-              src={`https:${weatherData.current.condition.icon}`}
-              alt="Weather icon"
-            />
-            <p>Temperature: {weatherData.current.temp_f}°F</p>
-            <p>Condition: {weatherData.current.condition.text}</p>
-          </div>
-        ) : (
-          <p>No location data available.</p>
-        )
-      ) : (
-        <p>Enter a city to get the weather data.</p>
-      )}
+     
 
       {/* <h3>Search History</h3>
       <ul>
