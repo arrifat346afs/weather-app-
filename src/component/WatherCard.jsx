@@ -11,7 +11,7 @@ const WatherCard = ({ weatherData }) => {
               src={`https:${weatherData.current.condition.icon}`}
               alt="Weather icon"
             />
-            <p>Temperature: {weatherData.current.temp_f}°F</p>
+            <p>Temperature: {weatherData.current.temp_c}°C</p>
             <p>Condition: {weatherData.current.condition.text}</p>
           </div>
         ) : (
