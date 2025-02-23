@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WatherCard = () => {
+const WatherCard = ({weatherData}) => {
   return (
     <div>
        {weatherData ? (

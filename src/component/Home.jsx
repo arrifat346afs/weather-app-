@@ -98,7 +98,7 @@ const Home = () => {
         setSearchTerm={setSearchTerm}
         searchPress={searchPress}
       />
-     <WatherCard />
+     <WatherCard weatherData={weatherData}/>
 
       {/* <h3>Search History</h3>
       <ul>
