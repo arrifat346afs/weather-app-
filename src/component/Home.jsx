@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import SearchBox from "./SearchBox";
 import WatherCard from "./WatherCard";
-import '../css/home.css'
+import "../css/home.css";
 
 const api = {
   weatherKey: "911c12b46fee4dba8c5133138252002",
@@ -90,14 +90,14 @@ const Home = () => {
     fetchWeather(searchTerm.trim());
   };
   return (
-    <div>
-    <img src="cloud.png" alt="" />
+    <div className="">
+      <img src="cloud.png" alt="" />
       <SearchBox
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         searchPress={searchPress}
       />
-     <WatherCard weatherData={weatherData}/>
+      <WatherCard weatherData={weatherData} />
 
       {/* <h3>Search History</h3>
       <ul>
@@ -107,7 +107,7 @@ const Home = () => {
           </li>
         ))}
       </ul> */}
-    </>
+    </div>
   );
 };
 
