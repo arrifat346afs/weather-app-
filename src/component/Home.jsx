@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-
 import { useState } from "react";
 import SearchBox from "./SearchBox";
-import { data } from "motion/react-client";
 import WatherCard from "./WatherCard";
 
 const api = {
