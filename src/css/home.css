@@ -1,6 +1,6 @@
 .home {
-  /* background-color: aqua; */
-height: 100vh;
+  background-color: aqua;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
