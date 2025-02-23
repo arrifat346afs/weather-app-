@@ -1,4 +1,5 @@
 .wather-card{
+    display: flex;
     
     background-color: rgb(12, 113, 201);
     width: 18rem;
