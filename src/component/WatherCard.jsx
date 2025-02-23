@@ -1,5 +1,5 @@
 import React from "react";
-
+import 'wat'
 const WatherCard = ({ weatherData }) => {
   return (
     <div className="wather-card">
