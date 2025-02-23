@@ -101,12 +101,12 @@ const Home = () => {
         weatherData.location ? (
           <div>
             <h2>Weather in {weatherData.location.name}</h2>
-            <p>Temperature: {weatherData.current.temp_f}°F</p>
-            <p>Condition: {weatherData.current.condition.text}</p>
             <img
               src={`https:${weatherData.current.condition.icon}`}
               alt="Weather icon"
             />
+            <p>Temperature: {weatherData.current.temp_f}°F</p>
+            <p>Condition: {weatherData.current.condition.text}</p>
           </div>
         ) : (
           <p>No location data available.</p>
