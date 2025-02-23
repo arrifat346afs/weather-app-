@@ -2,7 +2,7 @@ import React from 'react'
 
 const WatherCard = ({weatherData}) => {
   return (
-    <div>
+    <div className='wather'>
        {weatherData ? (
         weatherData.location ? (
           <div>
