@@ -27,7 +27,7 @@ const WeatherForecast = ({ city }) => {
       `http://api.weatherapi.com/v1/history.json?key=${YOUR_API_KEY}&q=${city}&dt=${date}`
     )
       .then((res) => res.json())
-      .then((data) => setPastWeatherData(data.forecast.forecastday))
+      .then((data) => setPastWeatherData(data.forecastDay))
       .catch((error) =>
         console.error("Error fetching past weather data:", error)
       );
