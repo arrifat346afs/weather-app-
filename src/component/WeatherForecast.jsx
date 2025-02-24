@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react";
 
-const 
+const YOUR_API_KEY = 
 
 
 
