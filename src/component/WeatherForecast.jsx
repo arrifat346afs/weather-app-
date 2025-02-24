@@ -1,6 +1,6 @@
 import React from 'react'
 
-const WeatherForecast = ({}) => {
+const WeatherForecast = ({city}) => {
     const [forecastData, setForecastData] = useState([]);
   const [pastWeatherData, setPastWeatherData] = useState([]);
 
