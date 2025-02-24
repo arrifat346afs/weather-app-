@@ -107,6 +107,7 @@ const Home = () => {
           </li>
         ))}
       </ul>
+      {location.loaded ?}
     </div>
   );
 };
