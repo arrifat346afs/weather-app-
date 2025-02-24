@@ -15,7 +15,7 @@ const WeatherForecast = ({ city }) => {
 
   const fetchForecastWeather = (city) => {
     fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=YOUR_API_KEY&q=${city}&days=7`
+      `http://api.weatherapi.com/v1/forecast.json?key=${Y}&q=${city}&days=7`
     )
       .then((res) => res.json())
       .then((data) => setForecastData(data.forecast.forecastday))
