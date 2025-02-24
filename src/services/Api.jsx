@@ -6,9 +6,8 @@ const api = {
   geocodeUrl: "https://nominatim.openstreetmap.org/reverse",
 };
 
-
 const Api = () => {
-useEffect(() => {
+  useEffect(() => {
     if (!navigator.geolocation) {
       setError("Geolocation is not supported by your browser.");
       return;
