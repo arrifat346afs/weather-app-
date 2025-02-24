@@ -1,5 +1,11 @@
 
 import React, { useState, useEffect } from "react";
+
+const 
+
+
+
+
 const WeatherForecast = ({city}) => {
     const [forecastData, setForecastData] = useState([]);
   const [pastWeatherData, setPastWeatherData] = useState([]);
