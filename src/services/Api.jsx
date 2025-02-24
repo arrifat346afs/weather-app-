@@ -6,7 +6,7 @@ const api = {
 };
 
 
-const fetchWeather = (query) => {
+export const fetchWeather = (query) => {
   if (!query) {
     setError("Please enter a location.");
     return;
