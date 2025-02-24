@@ -47,7 +47,7 @@ const WeatherForecast = ({ city }) => {
         </div>
       ))}
 
-      <h2>Past Weather for {city}</h2>
+      {/* <h2>Past Weather for {city}</h2>
       {pastWeatherData.map((day) => (
         <div key={day.date}>
           <p>
@@ -57,7 +57,7 @@ const WeatherForecast = ({ city }) => {
             Max: {day.day.maxtemp_c}°C, Min: {day.day.mintemp_c}°C
           </p>
         </div>
-      ))}
+      ))} */}
     </div>
   );
 };
