@@ -18,7 +18,7 @@ const WeatherForecast = ({ city }) => {
       `http://api.weatherapi.com/v1/forecast.json?key=${YOUR_API_KEY}&q=${city}&days=7`
     )
       .then((res) => res.json())
-      .then((data) => setForecastData(data.forecastday))
+      .then((data) => setForecastData(data.forecast.forecastday))
       .catch((error) => console.error("Error fetching forecast data:", error));
   };
 
@@ -27,7 +27,7 @@ const WeatherForecast = ({ city }) => {
       `http://api.weatherapi.com/v1/history.json?key=${YOUR_API_KEY}&q=${city}&dt=${date}`
     )
       .then((res) => res.json())
-      .then((data) => setPastWeatherData(data.forecastday))
+      .then((data) => setPastWeatherData(data.forecast.forecastday))
       .catch((error) =>
         console.error("Error fetching past weather data:", error)
       );
