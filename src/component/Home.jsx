@@ -108,7 +108,7 @@ const Home = () => {
           </li>
         ))}
       </ul>
-      
+      {location.loaded && <WeatherForecast city={location.city}/>}
     </div>
   );
 };
