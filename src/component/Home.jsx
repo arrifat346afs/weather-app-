@@ -56,36 +56,36 @@ const Home = () => {
     );
   }, []);
 
-  const fetchWeather = (query) => {
-    if (!query) {
-      setError("Please enter a location.");
-      return;
-    }
+  // const fetchWeather = (query) => {
+  //   if (!query) {
+  //     setError("Please enter a location.");
+  //     return;
+  //   }
 
-    fetch(`${api.weatherUrl}/current.json?key=${api.weatherKey}&q=${query}`)
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then((result) => {
-        setWeatherData(result);
-        setSearchHistory((prevHistory) => {
-          const newHistory = [...prevHistory];
-          if (
-            !newHistory.some(
-              (item) => item.location.name === result.location.name
-            )
-          ) {
-            newHistory.push(result);
-          }
-          return newHistory;
-        });
-        setError(null);
-      })
-      .catch(() => setError("Error fetching weather data. Please try again."));
-  };
+  //   fetch(`${api.weatherUrl}/current.json?key=${api.weatherKey}&q=${query}`)
+  //     .then((res) => {
+  //       if (!res.ok) {
+  //         throw new Error(`HTTP error! Status: ${res.status}`);
+  //       }
+  //       return res.json();
+  //     })
+  //     .then((result) => {
+  //       setWeatherData(result);
+  //       setSearchHistory((prevHistory) => {
+  //         const newHistory = [...prevHistory];
+  //         if (
+  //           !newHistory.some(
+  //             (item) => item.location.name === result.location.name
+  //           )
+  //         ) {
+  //           newHistory.push(result);
+  //         }
+  //         return newHistory;
+  //       });
+  //       setError(null);
+  //     })
+  //     .catch(() => setError("Error fetching weather data. Please try again."));
+  // };
 
   const searchPress = () => {
     fetchWeather(searchTerm.trim());
