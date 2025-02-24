@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SearchBox from "./SearchBox";
 import WatherCard from "./WatherCard";
 import "../css/home.css";
