@@ -107,7 +107,7 @@ const Home = () => {
           </li>
         ))}
       </ul>
-      {location.loaded ?}
+      {location.loaded && <Wather}
     </div>
   );
 };
