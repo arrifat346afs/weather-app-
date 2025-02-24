@@ -7,6 +7,7 @@ const api = {
 
 
 export const fetchWeather = (query) => {
+    const [error, setError] = useState(null);
   if (!query) {
     setError("Please enter a location.");
     return;
