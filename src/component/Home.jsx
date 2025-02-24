@@ -99,7 +99,7 @@ const Home = () => {
       />
       <WatherCard weatherData={weatherData} />
 
-      <h3>Search History</h3>
+      <h3>Search History{location}</h3>
       <ul>
         {searchHistory.map((item, index) => (
           <li key={index}>
