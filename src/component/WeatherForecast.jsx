@@ -18,7 +18,7 @@ const WeatherForecast = ({ city }) => {
       `http://api.weatherapi.com/v1/forecast.json?key=${YOUR_API_KEY}&q=${city}&days=7`
     )
       .then((res) => res.json())
-      .then((data) => setForecastData(data.forecast.forecastday))
+      .then((data) => setForecastData(data.forecastDay))
       .catch((error) => console.error("Error fetching forecast data:", error));
   };
 
