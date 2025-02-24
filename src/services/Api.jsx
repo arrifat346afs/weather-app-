@@ -8,16 +8,37 @@ const api = {
 
 
 const Api = () => {
-    const [temp, setTemp] = useState(0);
+useEffect(() => {
+    if (!navigator.geolocation) {
+      setError("Geolocation is not supported by your browser.");
+      return;
+    }
 
-  useEffect(() => {
-    const fatchData = async () => {
-      const result = await fetch(URL);
-      result.json().then((json) => {
-        setTemp(json.current.gust_kph)
-      });
-    };
-    fatchData();
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        const { latitude, longitude } = position.coords;
+
+        // Reverse geocoding to get accurate city name
+        fetch(`${api.geocodeUrl}?lat=${latitude}&lon=${longitude}&format=json`)
+          .then((res) => res.json())
+          .then((data) => {
+            const cityName =
+              data.address.city ||
+              data.address.town ||
+              data.address.village ||
+              "Unknown";
+            setLocation({
+              loaded: true,
+              city: cityName,
+              lat: latitude,
+              lng: longitude,
+            });
+            fetchWeather(cityName);
+          })
+          .catch(() => setError("Failed to fetch location name."));
+      },
+      (error) => setError(error.message)
+    );
   }, []);
 
   return (
